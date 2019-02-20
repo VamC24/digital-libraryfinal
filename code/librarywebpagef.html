@@ -1,0 +1,142 @@
+<html>
+<head>
+<style>
+#header {
+	border-style:solid;
+	border-color:tomato;
+	border-width:2px;
+	height:120px;
+	background: linear-gradient(to right, cyan 0%, cyan 50%);
+}
+#title {
+	font-family:viner hand itc;
+	font-size:21px;
+	color:red;
+	text-align:center;
+}
+body {
+	background: linear-gradient(to top left, #ffffcc 0%, #ffff00 100%)
+	background-image:url("lapbooks.jpg");
+	margin:0;
+}
+.menu {
+	width:100%;
+	background:#142b47;
+	overflow:auto;
+}
+.menu ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	line-height:60px;
+}
+.menu li {
+	float:left;
+}
+.menu ul li a{
+	background:#142b47;
+	text-decoration:none;
+	width:130px;
+	display:block;
+	text-align:center;
+	color:#f2f2f2;
+	font-size:18px;
+	font-family:verdana;
+	letter-spacing:0.5px;
+}
+.menu li a:hover {
+	color:#66ff33;
+	opacity:0.5;
+	font-size:19px;
+}
+.search-form {
+	margin-top:15px;
+	float:right;
+	margin-right:100px;
+}
+input[type=text] {
+	padding:7px;
+	border:none;
+	font-size:16px;
+	font-family:verdana;
+}
+button{
+	float:right;
+	background:orange;
+	color:white;
+	border-radius:0 5px 5px 0;
+	cursor:pointer;
+	position:relative;
+	padding:7px;
+	font-family:verdana;
+	border:none;
+	font-size:16px;
+}
+.container{
+	width:90%;
+	padding:10px;
+	margin:100px auto;
+	display:flex;
+	justify-content:center;
+}
+.box {
+	border-style:solid;
+	border-width:3px;
+	border-color:red;
+	width:230px;
+	height:230px;
+	background: #ff9900;
+	float:left;
+	margin:10px 10px;
+	transition:1s;
+}
+.box:hover {
+	transform:scale(1.2);
+	background:#ff800a;
+	box-shadow:2px 2px 2px #000;
+	z-index:2;
+}
+.bottom1 {
+	float:left;
+}
+.bottom2 {
+	float:right;
+}
+</style>
+</head>
+
+<body>
+<form action="" method="post">
+	<div id="header">
+	<div id="title"><h1>Digital librarY Mangement systeM </h1></div>
+	<nav class="menu">
+	<ul>
+		<li><a href="#"> HOME </a></li>
+		<li><a href="#"> EVENTS </a></li>
+		<li><a href="objectives.html"> OBJECTIVES </a></li>
+		<li><a href="rules.html"> RULES </a></li>
+		<li><a href="galary.html"> GALLERY </a></li>
+		<li><a href="papers.html"> PAPERS </a></li>
+		<li><a href="contact.html"> CONTACT US </a></li>
+
+	</ul>
+	<form class="search-form">
+	<input type="text" placeholder="Search"><button> SEARCH </button> 
+	</form>
+	</nav>
+	</div>
+	<div class="container">
+		<div class="box"><a href="#"><img src="register.jpg" width="230px" height="210px"></a><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspREGISTER HERE</b></div>
+		<div class="box"><a href="#"><img src="student.png" width="230px" height="210px"></a><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSTUDENT LOGIN </b></div>
+		<div class="box"><a href="#"><img src="Admin.png" width="230px" height="210px"></a><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspADMIN LOGIN </b></div>
+		<div class="box"><a href="#"><img src="books.jpg" width="230px" height="210px"></a><b>&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBOOKS </b></div>
+	</div>
+	<div class="bottom1">
+	<button><a href="#">ISSUE BOOKS</a></button>
+	</div>
+	<div class="bottom2">
+	<button><a href="#">RETURN BOOKS</a></button>
+	</div>
+	
+</body>
+</html>
